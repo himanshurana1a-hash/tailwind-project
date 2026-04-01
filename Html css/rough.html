@@ -1,0 +1,50 @@
+import React from 'react'
+// rfce rfc
+function Home() {
+    return (
+        <>
+            <div className='flex gap-3.5'>
+
+                {Array(3).fill().map((item, index) => (
+                    <div key={index} className="flex flex-col w-72">
+
+                        <div>
+                            <img
+                                src="https://www.propertyfinder.ae/blog/wp-content/uploads/2024/09/All-About-IMG-Worlds-of-Adventure1.jpg"
+                                alt="img"
+                            />
+                        </div>
+
+                        <div>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda hic deleniti necessitatibus aspernatur sint possimus doloribus perspiciatis aperiam nostrum illo.
+                        </div>
+
+                        <button>Read More</button>
+
+                    </div>
+                ))}
+            </div>
+
+
+            <h3 className="text-xs text-sky-400 italic" >This is Header</h3>
+            <h3 className="text-sm text-red-600 md:text-3xl md:text-pink-600" >This is Header</h3>
+            <h3 className="text-base" >This is Header</h3>
+            <h3 className="text-xl" >This is Header</h3>
+            <h3 className="text-2xl" >This is Header</h3>
+            <h3 className="text-3xl" >This is Header</h3>
+
+            <h3 className="text-4xl" >This is Header</h3>
+
+            <div class="w-64 bg-blue-400 shadow-lg rounded-lg p-4">
+  <img class="rounded" src="https://via.placeholder.com/150"/>
+  <h2 class="text-xl font-bold mt-2">Card Title</h2>
+  <p class="text-black font-bold">This is a simple  card.</p>
+</div>
+        </>
+    )
+}
+
+export default Home
+
+
+

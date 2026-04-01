@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            display: flex;
+            height: 50vh;
+            /* justify-content: center; */
+            align-items: center;
+            /* flex-direction: row; */
+            flex-wrap: wrap;
+            align-content: flex-start;
+            /* column-gap: 20px;
+            row-gap: 10px; */
+            gap: 20px 10px;
+
+        }
+
+        .item {
+            flex-grow: 1;
+            height: 92px;
+            width: 92px;
+            border: 2px solid black;
+            background-color: blueviolet;
+        }
+
+        .order-1 {
+            order: 1;
+        }
+
+        .item1 {
+            flex-grow: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- video,audio,media -->
+    <!--  flex shrink -->
+    <!-- allign shelf -->
+    <main>
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item order-1">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+            <div class="item">13</div>
+            <div class="item">14</div>
+            <div class="item">15</div>
+            <div class="item">16</div>
+            <div class="item order-66">17</div>
+            <div class="item">18</div>
+        </div>
+    </main>
+
+
+    <video style="width: 400px;height: 400px;"
+        src="https://www.youtube.com/watch?v=kJEsTjH5mVg&list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w&index=2&pp=iAQB0gcJCZQKAYcqIYzv"></video>
+    <iframe src="https://www.youtube.com/watchv=tVzUXW6siu0list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w"
+        frameborder="0"></iframe>
+
+
+    <iframe width="700" height="400"
+         src="https://www.youtube.com/embed/tVzUXW6siu0?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+
+
+    <p style="display: f;">
+        hello
+    </p>
+
+</body>
+
+</html>

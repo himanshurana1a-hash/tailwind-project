@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+      html,  body{
+        height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        
+        label{
+            display: block;
+            font-size: 12px;
+            font-weight: bold;
+            margin: 15px 0 5px;
+        }
+        .form-box{
+            background: rgb(228, 102, 102);
+            padding: 400px;
+            width: 500px;
+            border-radius: 6px;
+        }
+
+        input , textarea{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 4px;
+            outline: none;
+
+        }
+        .row{
+            display: flex;
+            gap: 15px;
+
+        }
+        button{
+            margin-top: 25px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 30px;
+            background-color: black;
+            color: aliceblue;
+            font-size: 14px;
+            cursor: pointer;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        textarea{
+            height: 100px;
+            resize: none;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- radio button or checkbox -->
+<div class="page">
+<div class="form-box">
+
+    <h1 style="text-align: center; margin-bottom: 30px;">Contact us</h1>
+    <form>
+      <label for="YOUR NAME">YOUR NAME*</label>
+      <div class="row">
+        <input type="text" id="YOUR NAME" placeholder="FIRST NAME">
+        <input type="text" id="YOUR NAME" placeholder="LAST NAME">
+        </div>
+
+        <label for="EMAIL">EMAIL ADDRESS*</label>
+        <input type="email" id="EMAIL" placeholder="Eg.example@gmail.com">
+
+        <label for="PHONE NUMBER">PHONE NUMBER*</label>
+        <input type="number" id="PHONE NUMBER" placeholder="Eg.+91 785324837">
+
+         <label for="MESSAGE">MESSAGE*</label>
+        <textarea id="MESSAGE" placeholder="Please enter your comments..."></textarea>
+
+        <button type="submit">submit</button>
+      
+    </form>
+    </div>
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,78 @@
+import React from 'react'
+import { IoIosCall } from "react-icons/io";
+import { IoIosMail } from "react-icons/io"
+import { IoLocation } from "react-icons/io5";
+import { FaGoogle } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+function Contact() {
+  return (
+    <>
+    
+    <div className=' grid  sm:grid-cols-2   p-10'>
+  <form className=' flex flex-col gap-2' >
+  
+   <div className='flex '>
+    <div className='w-1/2'>
+      <label> FIRST NAME:</label>
+  <input type="text" className='border w-64 grid'/>
+
+    </div>
+    <div className='w-1/2'>
+        <label> LAST NAME:</label>
+  <input type="text" className='border w-64'/>
+    </div>
+   </div>
+
+  <label> EMAIL:</label>
+  <input type="email" className='border w-64'/>
+
+  <label>PHONE NUMBER:</label>
+  <input type="number" className='border w-64'/>
+
+  <label>WHAT DO YOU HAVE IN MIND</label>
+ <textarea id="MESSAGE" placeholder="enter your query..." className='border w-64 h-20'></textarea>
+
+<br /><br />
+
+    <button className='bg-green-900 text-white w-32 p-4 rounded' type="submit">submit </button>
+   
+  </form>
+
+  <div>
+    <h1 className='font-bold text-2xl mt-4'>Contact us</h1>
+    <p className='mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias debitis perferendis deserunt nulla et temporibus ab rerum corrupti magnam reiciendis, ipsa explicabo voluptas ipsum perspiciatis in, omnis eveniet, doloremque natus.</p>
+  
+  <div  className='flex  gap-2 cursor-pointer mt-4'>
+     <IoIosCall />
+     <span> +916567326732</span>
+  </div>
+    
+  <div  className='flex  gap-2 cursor-pointer mt-4'>
+    <IoIosMail />
+    <span>hello@workat.in</span>
+  </div>
+    
+    <div className='flex gap-2 cursor-pointer mt-4'>
+          <IoLocation/>
+        <span>1002 Street , Y road,Dehradun</span>
+    </div>
+
+
+   <span className='flex gap-8 mt-8 cursor-pointer'>
+<FaGoogle />
+<FaTwitter />
+<FaInstagram />
+<FaFacebook />
+      </span>
+
+  </div>
+ 
+  </div>
+  
+    </>
+  )
+}
+
+export default Contact
