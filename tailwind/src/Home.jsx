@@ -654,7 +654,7 @@ function Home() {
                 <span><IoLogoYoutube /></span>
             </div>
             <div className='col-span-3'>
-               <ul className='text-sm'>Quick links</ul>
+               <ul className='font-semibold'>Quick links</ul>
                <li>Home</li>
                <li>Feautures</li>
                <li>Pricing</li>
